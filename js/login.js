@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (response.status === 200) {
                 localStorage.setItem("token", data.data.accessToken);
-                window.location.href = "/pages/shorten.html";
+                window.location.href = "./pages/shorten.html";
             } else {
                 alert(data.error.details || "Login failed.");
             }
